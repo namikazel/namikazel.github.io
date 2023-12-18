@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var message = radioAttend ? 'Ya, saya bisa datang' : 'Maaf, Saya tidak bisa datang';
 
         // Menyusun URL untuk API WhatsApp
-        var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent('Nama : ' + '*' + name + '*' + '%0A' + message + '%0A%0A' + what);
+        var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent('Nama : ' + '*' + name + '*' + '\n' + message + '\n\n' + what);
 
         // Simulasi pengiriman pesan (misalnya dengan membuka jendela baru atau mengarahkan ke halaman)
         window.location.href = whatsappURL;
